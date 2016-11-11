@@ -1,3 +1,6 @@
+DEPRECATED - PLEASE PREFER https://github.com/saasbook/hw-acceptance-unit-test-cycle
+=====
+
 BDD, TDD Cycle
 ===
 
