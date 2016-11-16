@@ -13,6 +13,7 @@ Rottenpotatoes::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :movies
+  root :to => 'movies#index'
 
   # Sample resource route with options:
   #   resources :products do
@@ -56,4 +57,7 @@ Rottenpotatoes::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+  
+  # Adding my route for finding movies with the same director
+  match 'movies/find/:id' => 'movies#find', via: [:get], as: 'find_movie'
 end
